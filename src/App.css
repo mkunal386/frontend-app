@@ -1,0 +1,10 @@
+.App-Header{
+  background-color: bisque;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.App-Header h1{
+  margin: 0;
+}
