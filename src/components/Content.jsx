@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./Content.css";
+import {Link} from 'react-router-dom'
 
 const API_URL=import.meta.env.VITE_API_URL
 function Content() {
@@ -33,7 +34,7 @@ function Content() {
             <h3  >{product.name}</h3>
             <p>{product.desc} </p>
             <h4>{product.price}</h4>
-            <button>Add to Cart</button>
+            <button><Link to="/cart">Add to Cart</Link></button>
             <img src={`${API_URL}/${product.imageUrl}`}  width="300px"alt="" />
             </div>
         ))}
